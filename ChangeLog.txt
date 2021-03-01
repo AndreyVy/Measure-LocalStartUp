@@ -1,0 +1,107 @@
+Date: 2019/02/15
+    - implement expanding system variables in user inputs
+    - minor bugfixing
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/14
+    - Implement specific shortcut selection as DOS-like menu: script allows shortcut selection with Up and Down
+      Arrow keys. This functionality operates with Current User Start Menu
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/13
+    - change and integrate functions responsible for menu drawning
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/12
+    - implement csv parser. Requires FilePath column in structure as mandatory argument.
+    - implement arguments and Working Directory parsing as optional parameters
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/11
+    - implement on-screen logging on demand
+    - implement error log file create
+    - implement silent mode
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/08
+    - Common Logger update
+    - CSV Parser (Default delimeter ",")
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/08
+    - Implement proper Application close function
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/07
+    - Update bulk mode according to new measure functionality
+    - Error logging
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/06
+    - Major upgrade of measure functionality. New approach is based on snapshotting process with WindowTitle
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/05
+    - Implement process-tree analyzing
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/04
+    - Implement shortcut parser
+    - Update output to represent results clearly
+    - Enable StartMenu Bulk mode
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/02/01
+    - Improve time-test for application launched with RES (hardcodes were included)
+    - Optimize wmic functions to make things faster
+    - Optimize app shutdown functionality:
+        - 1st try close application gently
+        - 2nd try kill application process
+        - enable timeout to wait for unloading application from memory, otherwise stop testing
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/01/31
+    - Added detailed description to the script
+    - Improve Exception handling
+    - Basic functionality to handle applications started with RES
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/01/30
+    - Improve time measure for application with splash screens;
+    - Decrease script common CPU usage
+    - Implement StopWatch functionality to measure start up time
+    - Improve code readability:
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/01/29
+    - Implement command line support
+    - Optimize measure function on fast processes
+    - Implement protection in case of application freezing;
+    - Redesign console output
+        - add Computername
+        - add/format DateTime
+        - add NumberOfTests
+        - edit Application name output
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/01/28
+    - Implement time-test for default Windows scripts (cmd, vbs, ps1). Required interpritator is selected
+      automatically depending on script extension
+    - Improve measure functionality
+    - Create test-scripts
+    - Exclude Apptimer.exe: "Main Window Title" - is a show-stopper to use the application with script
+    - Script launch an application measure time before window appearence and close the application
+    - Implement several test-rounds to get min, max and avarage values
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/01/25
+    - Implement interactive DOS-like menu
+    - common bugfixes
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/01/24
+    - Move all functionality to ps1 script
+    - Implement CSV output
+    - Improve Apptimer.exe log handling
+    - Improve job with Apptimer.exe config file. Create it dynamically in %tmp% directory with required values
+    - Implement post-test cleanup
+    - minor bugfixing
+-------------------------------------------------------------------------------------------------------------------
+Date: 2019/01/23
+    - Design common concept: inputs, outputs, generic functions
+    - Integrate AppTimer.exe
+    - Remove hardcodes
+    - Create minimal output
+
+===================================================================================================================
+                                      TODO:
+===================================================================================================================
+1) Application in Systray
+2) Expand environment variables
+3) Parse shortcuts without path (?)
+4) Number of tests in csv(?)
+5) Exclusion list for apps
+6) 

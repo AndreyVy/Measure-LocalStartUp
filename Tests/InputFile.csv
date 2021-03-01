@@ -1,0 +1,4 @@
+"ComputerName";"TestDateTime";"NumberOfTests";"FilePath";"Arguments";"MinimumStartTime";"MaximumStartTime";"AverageStartTime";"Discrepancy"
+"";"";"3";"C:\windows\notepad.exe";"";"";"";"";""
+"";"";"3";"C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\FileZilla.lnk";"";"";"";"";""
+"";"";"3";"C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk";"";"";"";"";""
